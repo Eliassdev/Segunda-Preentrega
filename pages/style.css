@@ -1,0 +1,87 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0px
+    
+}
+html{
+    font-size: 62.5%;
+}
+
+
+/* ESTILOS DEL FORMULARIO DE REGISTRO */
+
+.titulo_registro{
+    font-size:  3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    color: blue;
+    text-align: center;
+
+}
+.contenedor-registro #form_registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+#form_registro{
+    margin-top: 2rem;
+    justify-content: center;
+    margin-left: 31rem;
+}
+.volver_inicio{
+
+    margin-top: 2rem;
+    font-size: 2.5em;
+}
+
+
+/* Estilos de LISTADO DE PRODUCTOS */
+
+
+.contenedor{
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: (1, 1fr);
+    grid-template-rows: (7, 1fr);
+
+    width: 615px;
+    margin: 1rem;
+    padding: 1rem;
+}
+.card{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+     color: blue;
+     margin : 1rem;
+     padding : 1rem;
+     width: 500px;
+    border: solid red;
+
+}
+.img{
+    border: solid greenyellow;
+
+    width: 500px;
+    
+
+}
+.h2{
+    color: blue;
+
+}
+h3{
+    font-size: 3.5em;
+    color: rgb(112, 112, 215);
+}
+.button{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
