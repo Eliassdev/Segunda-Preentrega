@@ -8,6 +8,7 @@ let ingreso_password = document.getElementById("ingreso_password");
 let error = document.getElementById("error")
 let usuarios = localStorage.getItem("usuarios");
 
+
 // PARSEO EL JSON PARA DESCONVERTIRLO 
 
 usuarios = JSON.parse(usuarios);
@@ -23,6 +24,7 @@ form_ingreso.addEventListener("submit" , (e) => {
     e.preventDefault();
     
     for(let user of usuarios){ 
+
 
         if(ingreso_usuarios.value === user.usuario && ingreso_password.value === user.contraseña){
             
