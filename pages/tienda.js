@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded" , function(){
 
 
 //FUNCIONES
+
 function mostrar_productos(){
 
     fetch("../productos.json")
@@ -68,49 +69,7 @@ function mostrar_productos(){
         div.appendChild(btn);
         contenedor_productos.appendChild(div);
     });
-})}
-
-    
-/*    data.forEach(function(producto){
-        const div_productos = document.createElement("div");
-    
-        div_productos.classList.add("card");
-
-        const img_producto = document.createElement("img");
-        img_producto.src = producto.img
-
-        console.log(div_productos)
-
-        const titulo_producto = document.createElement("h2");
-        titulo_producto.textContent = producto.name;
-
-        const precio_producto = document.createElement("h6");
-        precio_producto.textContent = producto.precio;
-        precio_producto.style.color = "red";
-        precio_producto.style.fontSize = "24px";
-
-        const btn = document.createElement("button");
-        btn.textContent = "Agregar al carrito";
-        btn.classList.add("btn-style");
-        //agregamos evento al boton
-        btn.onclick = function () {
-            agregar_carrito(producto.id);     
-
-}
-
-
-        div_productos.appendChild(img_producto);
-        div_productos.appendChild(titulo_producto);
-        div_productos.appendChild(precio_producto);
-        div_productos.appendChild(btn);
-        
-        //agregamos al DOM
-        contenedor_productos.appendChild(div_productos);
-        
-    }
-    
-    )
-}*/
+})};
 
 function agregar_carrito(id){
     fetch("../productos.json")
@@ -128,6 +87,11 @@ function agregar_carrito(id){
             );
             
             listado_carrito.push(producto_seleccionado);
+            
+            console.clear();
+
+            mostrar_carrito();
+
         });
     
     Toastify({
@@ -143,18 +107,19 @@ function agregar_carrito(id){
     
     
     
-    mostrar_carrito(listado_carrito);
 }
 
-function mostrar_carrito(seleccionado){
+function mostrar_carrito(){
 
         // RECORRO EL ARRAY PARA MOSTRAR LOS PRODUCTOS SELECCIONADOS
         let [img] = listado_carrito;
         
         
         contenedor_carrito.innerHTML = "";
-    
-        listado_carrito.forEach(function(producto){
+        
+
+        listado_carrito.find(function(producto){
+
         const div_productos = document.createElement("div");
     
         div_productos.classList.add("card");
@@ -163,7 +128,7 @@ function mostrar_carrito(seleccionado){
         img_producto.src = producto.img
         
         
-        console.log(div_productos)
+        console.log(producto)
         
         const titulo_producto = document.createElement("h2");
         titulo_producto.textContent = producto.name;
