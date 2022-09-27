@@ -1,0 +1,51 @@
+[ 
+ 
+ {  
+     
+         "id" :  1 ,
+        "name" : "Nike AirMax",
+        "precio" : 11000,
+        "img" : "../images/nike.jpg"
+    } ,
+
+    
+    {   
+        "id" :  2 ,
+        "name" : "Adidas",
+        "precio" : 5000,
+        "img" : "../images/adidas.jpg"
+    },
+    {   
+        "id" :  3 ,
+        "name" : "Reebok",
+        "precio" : 7000,
+        "img" : "../images/reebok.jpg"
+    },
+    {   
+        "id" :  4 ,
+        "name" : "New Balance",
+        "precio" : 9000,
+        "img" : "../images/newbalance.jpg"
+    },
+    {   
+        "id" :  5 ,
+        "name" : "Fila",
+        "precio" : 8400,
+        "img" : "../images/fila.jpg"
+    },
+    {   
+        "id" :  6 ,
+        "name" : "Puma",
+        "precio" : 10700,
+        "img" : "../images/puma.jpg"
+    },
+    {   
+        "id" :  7 ,
+        "name" : "Converse",
+        "precio" : 5700,
+        "img" : "../images/converse.jpg"
+    }
+
+
+    
+]

@@ -43,7 +43,22 @@ form_registro.addEventListener("submit" , (e) => {
 
 
 
-        puede_ingresar == "ingresa" ? alert("El registro ha sido exitoso con el nombre " + registro_usuarios.value) : alert("Debe ser mayor a 18 años");  
+        puede_ingresar == "ingresa" ?             Swal.fire({
+            
+            icon: "succes",
+            title: "Registro Exitoso",
+            footer:"Ir al inicio para : <a href='../preentrega2.html'> Ingresar </a>"
+        
+        }) : Swal.fire({
+
+            icon: "warning",
+            title: "Debe ser mayor de edad ",
+            
+            
+            
+            
+
+        })
           
     }
     });
